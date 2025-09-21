@@ -1,0 +1,101 @@
+# 📦 My Social Media App
+
+<!-- [![Test Coverage](https://img.shields.io/badge/Coverage-90%25-green)](https://jestjs.io/) [![Build Status](https://img.shields.io/badge/Build-Passing-green)](https://github.com/your-username/your-repo-name)-->
+
+<!--  > *Your documentation is a direct reflection of your software, so hold it to the same standards.-->
+
+
+## 🌟 Highlights
+
+- The front-end will allow users to perform CRUD operations (Create, Read, Update, and Delete) on their own posts.
+- Features such as following/unfollowing users, commenting on posts, and reacting to a post with an emoji.
+
+## ℹ️ Overview
+
+This is a front-end for a social media application, it is a single-page application built with Vite and JavaScript. 
+
+### The pages included are:
+- Login page.
+- Register page.
+- Posts/feed page.
+- Individual post page.
+- User’s own profile page.
+
+### Out of Scope:
+The importance of this assignment is to demonstrate JavaScript. Therfore it will not be an amazing design for the project, just some basic styling in place.
+
+## 💻 Technologies
+Languages:
+
+- TypeScript
+
+Frameworks & Libraries:
+
+- Vite
+
+- Jest
+
+## 📂File Structure
+The project follows a standard file structure for a Vite application.
+
+* `src/api/`: Contains service files for handling API requests.
+
+* `src/components/`: Houses UI components.
+
+* `src/pages/`: Contains the main pages of the application.
+
+* `src/utils/`: Stores reusable utility functions, like data transformers.
+
+* `index.html`: The entry point of the application.
+
+* `package.json`: Manages project dependencies and scripts.
+
+* `jest.config.js`: Configuration file for unit tests.
+
+* `tsconfig.json`: TypeScript configuration.
+
+
+### ✍️ Authors
+
+I'm a Front End Developer student [@Anne-Zwift](https://github.com/Anne-Zwift/) and this is my [project](https://github.com/Anne-Zwift/vite-indoor-cycling/) building a social media application.
+
+
+## 🚀 Usage
+
+This application is designed to be used in a web browser. Once you have it running, you will be able to navigate through the different pages to log in, register, view the post feed, and interact with user profiles and posts.
+
+
+## ⬇️ Installation
+
+#### Getting Started
+### Prerequisites
+You need to have [Node.js](https://nodejs.org/en/) and npm installed on your computer.
+
+### Installation
+
+#### 1. Clone the repository:
+
+`git clone [your-repo-url]`
+
+
+#### 2. Navigate to the project directory:
+
+`cd vite-indoor-cycling`
+
+
+#### 3. Install the dependencies:
+
+`npm install`
+
+
+### Running the Project
+To start the development server and view the application in your browser, run the following command:
+
+`npm run dev`
+
+The application will be available at a local URL, typically `http://localhost:5173`.
+
+
+## 💭 Feedback and Contributing
+
+#### 👩‍🎓 This is a project for my education purpose only.
