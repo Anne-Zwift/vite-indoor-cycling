@@ -1,4 +1,4 @@
-export function createNav(renderPage) {
+export function createNav(renderPage: (path: string) => void) {
   const nav = document.createElement('nav');
 
   const links = [
