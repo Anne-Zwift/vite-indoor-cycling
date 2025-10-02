@@ -1,0 +1,3 @@
+export function getAccessToken(): string | null {
+  return localStorage.getItem('Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5uZVp3aWZ0IiwiZW1haWwiOiJhbm5tYXQwMDA3NUBzdHVkLm5vcm9mZi5ubyIsImlhdCI6MTc1OTQwMDMwOH0.6TPi7rS26gpNYGPuPbzWBB2Z8t0ollBWretdZWj5w8A');
+}
