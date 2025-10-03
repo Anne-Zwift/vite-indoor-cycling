@@ -8,7 +8,7 @@
  * Parse the JSON response
  */
 
-import { BASE_URL, API_KEY } from '../constants.ts';
+import { BASE_URL, NOROFF_API_KEY } from '../constants.ts';
 import { getAccessToken } from '../utils/authUtils.ts';
 
 export interface ApiResponse<T> {
@@ -89,7 +89,7 @@ async function apiClient<T>(
   const accessToken = getAccessToken();
   const headers: HeadersInit = {
     'Content-Type': 'application/json',
-    'API-KEY': 'API_KEY',
+    'X-Noroff-API-Key': '72ab2176-fbc7-42d5-b311-90f109929065',
   };
 
   if (accessToken) {
@@ -110,7 +110,7 @@ async function apiClient<T>(
   }
 
   try {
-    const response = await fetch(BASE_URL + endpoint, config);
+    const response = await fetch(BASE_URL + '/' + endpoint, config);
 
     if (!response.ok) {
       const errorData = await response.json();
