@@ -139,7 +139,7 @@ export const get = <T>(endpoint: string): Promise<ApiResponse<T> | null> => apiC
 export const del = <T>(endpoint: string): Promise<ApiResponse<T> | null> => apiClient<T>(endpoint, { method: 'DELETE'});
 
 // POST and PUT require both the response type <T> and the request body type <D>
-export const post = <T, D = unknown>(endpoint: string, body: D): Promise<ApiResponse<T> | null> => apiClient<T>(endpoint, { body });
+export const post = <T, D = unknown>(endpoint: string, body?: D): Promise<ApiResponse<T> | null> => apiClient<T>(endpoint, { body });
 
-export const put = <T, D = unknown>(endpoint: string, body: D): Promise<ApiResponse<T> | null> => apiClient(endpoint, { method: 'PUT', body });
+export const put = <T, D = unknown>(endpoint: string, body?: D): Promise<ApiResponse<T> | null> => apiClient(endpoint, { method: 'PUT', body });
 
