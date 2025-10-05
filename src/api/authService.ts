@@ -49,6 +49,12 @@ export interface AuthResponseData extends UserProfile {
   accessToken: string;
 }
 
+export interface ReactionResponseData {
+  postId: number;
+  symbol: string;
+  reactions: Array<{ symbol: string; count: number; }>;
+}
+
 export async function login(credentials: LoginCredentials): Promise<UserProfile | undefined> {
 
   try {
@@ -72,12 +78,12 @@ export async function register(body: RegisterBody): Promise<UserProfile | undefi
 
     const response = await post<AuthResponseData, RegisterBody>('/auth/register', body);
     
-    if (response && response.data.accessToken) {
+    if (response?.data?.accessToken) {
       setAccessToken(response.data.accessToken);
 
-      const { accessToken, ...userProfile } = response.data;
+      const { accessToken, ...ProfileData } = response.data;
 
-      return userProfile as UserProfile;
+      return ProfileData;
     }
   } catch (error) {
     console.error('Register failed:', error);
