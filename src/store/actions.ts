@@ -17,7 +17,7 @@ export function setRouter(routerInstance: Router): void {
   router = routerInstance; 
 } 
 
-function navigate(path: string): void {
+export function navigate(path: string): void {
   router?.navigate(path);
 }
 
