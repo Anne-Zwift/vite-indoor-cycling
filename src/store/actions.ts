@@ -9,7 +9,22 @@ import type { LoginCredentials, UserProfile } from '../api/authService.ts';
 import { login as authLogin } from '../api/authService.ts';
 import { clearAccessToken, getAccessToken } from '../utils/authUtils.ts';
 import { getProfile } from '../api/profileService.ts';
+import { register as authRegister } from '../api/authService.ts';
+import type { RegisterBody } from '../api/authService.ts';
  
+export async function register(body: RegisterBody): Promise<void> {
+  try {
+    const profile = await authRegister(body);
+
+    if (profile) {
+      state.userProfile = profile;
+      state.isLoggedIn = true;
+      navigate('/');
+    }
+  } catch (error) {
+    throw error;
+  }
+}
 
 let router: Router | null = null; 
 
@@ -41,6 +56,8 @@ export async function checkAuthStatus(): Promise<void> {
   }
 
 }
+
+
 
 export async function login(credentials: LoginCredentials): Promise<void> { 
 try {
