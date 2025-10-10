@@ -24,7 +24,7 @@ The importance of this assignment is to demonstrate JavaScript. Therfore it will
 
 ### Backend Context
 The backend server is hosted externally and is not part of this repository. All API requests are from the client directed to the base Url defined in `src\constants.ts`.
-The application follows a Three-Tier Monolithic architecure by connecting to a remote, unified Node.js/Express API backend by PostgreSQL. This repository contains only the client-side code.
+The application follows a Three-Tier Monolithic architecture by connecting to a remote, unified Node.js/Express API backend by PostgreSQL. This repository contains only the client-side code.
 
 <img width="439" height="170" alt="image" src="https://github.com/user-attachments/assets/3a50e262-c7a9-4f97-8a10-043241172906" />
 
