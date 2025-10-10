@@ -30,9 +30,9 @@ The application follows a Three-Tier Monolithic architecure by connecting to a r
 
 ### Component Breakdown:
 
-**Browser(Client):** The Single-Page Application (SPA) built with Vite and TypeScript. It communicates with the Server via API calls.
-**Server(Monolith):** A single external Node.js/Express application that hosts all business logic (Auth, Posts, Routing) and serves the API endpoints.
-**Database(PostgreSQL):** The external persistent data store used by the Server.
+**Browser(Client):** The Single-Page Application (SPA) built with Vite and TypeScript. It communicates with the Server via API calls.<br>
+**Server(Monolith):** A single external Node.js/Express application that hosts all business logic (Auth, Posts, Routing) and serves the API endpoints.<br>
+**Database(PostgreSQL):** The external persistent data store used by the Server.<br>
 
 ## 💻 Technologies
 Languages:
