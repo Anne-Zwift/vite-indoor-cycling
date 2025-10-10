@@ -1,9 +1,5 @@
 # 📦 My Social Media App
 
-<!-- [![Test Coverage](https://img.shields.io/badge/Coverage-90%25-green)](https://jestjs.io/) [![Build Status](https://img.shields.io/badge/Build-Passing-green)](https://github.com/your-username/your-repo-name)-->
-
-<!--  > *Your documentation is a direct reflection of your software, so hold it to the same standards.-->
-
 
 ## 🌟 Highlights
 
@@ -25,15 +21,18 @@ This is a front-end for a social media application, it is a single-page applicat
 The importance of this assignment is to demonstrate JavaScript. Therfore it will not be an amazing design for the project, just some basic styling in place.
 
 ## System Architecture:
-The application follows a classic Three-Tier Monolithic architecure, consisting of a decoupled TypeScript frontend, a unified Node.js/Express backend, and a PostgreSQL database.
+
+### Backend Context
+The backend server is hosted externally and is not part of this repository. All API requests are from the client directed to the base Url defined in `src\constants.ts`.
+The application follows a Three-Tier Monolithic architecure by connecting to a remote, unified Node.js/Express API backend by PostgreSQL. This repository contains only the client-side code.
 
 <img width="439" height="170" alt="image" src="https://github.com/user-attachments/assets/3a50e262-c7a9-4f97-8a10-043241172906" />
 
 ### Component Breakdown:
 
 **Browser(Client):** The Single-Page Application (SPA) built with Vite and TypeScript. It communicates with the Server via API calls.
-**Server(Monolith):** A single Node.js/Express application that hosts all business logic (Auth, Posts, Routing) and serves the API endpoints.
-**Database(PostgreSQL):** The persistent data store used by the Server.
+**Server(Monolith):** A single external Node.js/Express application that hosts all business logic (Auth, Posts, Routing) and serves the API endpoints.
+**Database(PostgreSQL):** The external persistent data store used by the Server.
 
 ## 💻 Technologies
 Languages:
