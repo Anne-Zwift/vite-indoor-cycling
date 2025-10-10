@@ -24,6 +24,17 @@ This is a front-end for a social media application, it is a single-page applicat
 ### Out of Scope:
 The importance of this assignment is to demonstrate JavaScript. Therfore it will not be an amazing design for the project, just some basic styling in place.
 
+## System Architecture:
+The application follows a classic Three-Tier Monolithic architecure, consisting of a decoupled TypeScript frontend, a unified Node.js/Express backend, and a PostgreSQL database.
+
+<img width="439" height="170" alt="image" src="https://github.com/user-attachments/assets/3a50e262-c7a9-4f97-8a10-043241172906" />
+
+### Component Breakdown:
+
+**Browser (Client):** The Single-Page Application (SPA) built with Vite and TypeScript. It communicates with the Server via API calls.
+**Server (Monolith):** A single Node.js/Express application that hosts all business logic (Auth, Posts, Routing) and serves the API endpoints.
+**Database (PostgreSQL):** The persistent data store used by the Server.
+
 ## 💻 Technologies
 Languages:
 
@@ -34,6 +45,7 @@ Frameworks & Libraries:
 - Vite
 
 - Jest
+  
 
 ## 📂File Structure
 The project follows a standard file structure for a Vite application.
