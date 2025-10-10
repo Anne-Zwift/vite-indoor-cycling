@@ -18,7 +18,7 @@ This is a front-end for a social media application, it is a single-page applicat
 - User’s own profile page.
 
 ### Out of Scope:
-The importance of this assignment is to demonstrate JavaScript. Therfore it will not be an amazing design for the project, just some basic styling in place.
+The importance of this assignment is to demonstrate JavaScript. Therefore it will not be an amazing design for the project, just some basic styling in place.
 
 ## System Architecture:
 
